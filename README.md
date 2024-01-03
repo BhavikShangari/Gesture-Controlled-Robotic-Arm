@@ -2,6 +2,8 @@
 We built the hardware using micro servo motors and 2 MG996R servo motors along with plastic scales as links of the arm.
 The arm has 3DOF movement and a small gripper to pick and place objects less than 100g, specifically made to demonstraate our idea of building a gesture controlled robotic arm.
 The picture shows the basic model that was made:
+
+
 ![Image description](arm1.jpg)
 
 ## Microcontroller used
@@ -11,6 +13,8 @@ The python script consisted of logic to give exact servo angles in real time aft
 ## CAMERA Configuration
 We used 2 cameras to capture the position and estimate the angles in 3D, so one camera we used was of laptop and another one was placed towards the right perpendicularly.
 The given image shows the configuration:
+
+
 ![Image description](arm3.jpg)
 
 ## Calculating Angles And Mediapipe Library
@@ -21,5 +25,17 @@ The right camera was used to determine the vector formed by the landmarks on the
 Each individual part of the human arm depicted a link for the robotic arm and used to determine the location of the arm.
 We set a refrence vector in a perpendicuar direction at each joint and then determined the inclination from that using cosine inverse and then sent that particular angle to the servo motor at that joint.
 the given image shows the image feed and landmarks:
+
+
 ![Image description](arm5.jpg)
+
+## Running the script
+Install the dependencies:
+```
+pip install -r requirements.txt
+#to run the script:
+python3 run.py
+
+```
+
 
