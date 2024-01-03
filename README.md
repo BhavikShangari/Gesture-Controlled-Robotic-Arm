@@ -30,10 +30,11 @@ the given image shows the image feed and landmarks:
 ![Image description](arm5.jpg)
 
 ## Running the script
-Install the dependencies:
+
 ```
+# Install the dependencies
 pip install -r requirements.txt
-#to run the script:
+# Run the script:
 python3 run.py
 ```
 
