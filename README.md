@@ -35,7 +35,6 @@ Install the dependencies:
 pip install -r requirements.txt
 #to run the script:
 python3 run.py
-
 ```
 
 
